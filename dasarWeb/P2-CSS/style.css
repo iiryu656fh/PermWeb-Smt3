@@ -13,8 +13,13 @@ h2{
 }
 
 #kotak{
-    width: 40px;
+    width: 400px;
     color: #fff;
     background: blue;
     padding: 50px;
+}
+
+body{
+    background: lightcyan;
+    color: white;
 }
