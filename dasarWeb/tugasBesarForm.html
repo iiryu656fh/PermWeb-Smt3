@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Tugas Besar Pertemuan 1 - Membuat Form</title>
+    </head>
+    <body>
+        <form method="post" action="gambar.html">
+            <fieldset>
+                <legend>Data Mahasiswa</legend>
+                <label for="nama">Nama:</label>
+                <input type="text" id="nama" name="nama"><br><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email"><br><br>
+
+                <label for="tanggalLahir">Tanggal lahir:</label>
+                <input type="date" id="tanggalLahir" name="tanggalLahir"><br><br>
+
+                <label for="jenisKelamin">Jenis Kelamin:</label>
+                <select name="jenisKelamin" size="1">
+                    <option value="lakiLaki" selected>Laki-laki</option>
+                    <option value="perempuan">Perempuan</option>
+                </select> <br><br>
+
+                <label for="alamat">Alamat:</label><br>
+                <textarea name="alamat" cols="100" rows="20"></textarea><br><br>
+            </fieldset>
+            <fieldset>
+                <legend>Komentar</legend>
+                <label for="comment1">Darimana Anda mengetahui buku ini?</label>
+                <select name="comment1" size="1">
+                    <option value="google" selected>Google</option>
+                    <option value="teman">Teman</option>
+                    <option value="poster">Poster</option>
+                    <option value="instagram">Instagram</option>
+                    <option value="lainnya">Lainnya</option>
+                </select> <br><br>
+
+                <label for="comment2">Bagaimana Menurut anda terhadap buku ini?</label><br>
+                <input type="radio" name="comment2" value="r1">Biasa
+                <input type="radio" name="comment2" value="r2">Bagus
+                <input type="radio" name="comment2" value="r3">Menarik <br><br>
+
+                <label for="comment3">Komentar Anda:</label><br>
+                <textarea name="comment3" cols="50" rows="10"></textarea><br><br>
+
+                <input type="checkbox" name="sendToEmail" value="Yes" checked>Kirim ke Email bila ada info terbaru
+            </fieldset><br>
+            <center>
+                <input type="submit" name="kirim" value="Kirim">
+            </center>
+        </form>
+    </body>
+</html>
