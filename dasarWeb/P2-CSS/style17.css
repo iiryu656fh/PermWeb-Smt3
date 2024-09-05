@@ -5,7 +5,7 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #ddd;
+    background-color: #74bbee;
     line-height: 1.65;
     padding-bottom: 1000px;
 }
@@ -13,7 +13,7 @@ body {
 .container-satu {
     width: 1000px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #f9a807;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
