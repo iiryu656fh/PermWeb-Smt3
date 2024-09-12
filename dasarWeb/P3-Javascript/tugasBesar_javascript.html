@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas Besar Javascript</title>
+        <script type="text/javascript">
+            function message(){
+                var firstName = document.getElementById('firstName').value;
+                var lastName = document.getElementById('lastName').value;
+
+                if (firstName == "" && lastName == "") {
+                    alert("Nama depan dan nama belakang harus diisi!");
+                } else if (firstName == ""){
+                    alert("Nama depan harus diisi!");
+                } else if (lastName == "") {
+                    alert("Nama belakang harus diisi!");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <p id="demo"></p>
+        <form>
+            <label for ="firstName">First Name: </label>
+            <input type="text" id="firstName" name="firstName"> <br>
+            <label for ="lastName">Last Name: </label>
+            <input type="text" id="lastName" name="lastName"><br>
+            <button type="button"  onclick="message()">Submit</button>
+        </form>
+    </body>
+</html>
