@@ -9,23 +9,26 @@
 
                 if (firstName == "" && lastName == "") {
                     alert("Nama depan dan nama belakang harus diisi!");
+                    return false;
                 } else if (firstName == ""){
                     alert("Nama depan harus diisi!");
+                    return false;
                 } else if (lastName == "") {
                     alert("Nama belakang harus diisi!");
+                    return false;
                 }
+            return true;
 
             }
         </script>
     </head>
     <body>
-        <p id="demo"></p>
-        <form>
+        <form name="nameSubmit" method="post" action="variabel_javascript.html" onsubmit="return message()">
             <label for ="firstName">First Name: </label>
             <input type="text" id="firstName" name="firstName"> <br>
             <label for ="lastName">Last Name: </label>
             <input type="text" id="lastName" name="lastName"><br>
-            <button type="button"  onclick="message()">Submit</button>
+            <button type="submit">Submit</button>
         </form>
     </body>
 </html>
