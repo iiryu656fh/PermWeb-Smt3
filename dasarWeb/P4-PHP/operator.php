@@ -9,6 +9,7 @@ $hasilBagi = $a / $b;
 $sisaBagi = $a % $b;
 $pangkat = $a ** $b;
 
+echo "<br>";
 echo "a = 10, b = 5 <br>";
 echo "<br>a + b     : {$hasilTambah}<br>";
 echo "a - b     : {$hasilKurang}<br>";
@@ -24,6 +25,7 @@ $hasilLebihBesar = $a > $b;
 $hasilLebihKecilSama = $a <= $b;
 $hasilLebihBesarSama = $a >= $b;
 
+echo "<br>";
 echo "a == b    : {$hasilSama}<br>";
 echo "a != b    : {$hasilTidakSama}<br>";
 echo "a < b     : {$hasilLebihKecil}<br>";
@@ -36,14 +38,21 @@ $hasilOr = $a || $b;
 $hasilNotA = !$a;
 $hasilNotB = !$b;
 
+echo "<br>";
 echo "a && b    : {$hasilAnd}<br>";
 echo "a || b    : {$hasilOr}<br>";
 echo "!a        : {$hasilNotA}<br>";
 echo "!b        : {$hasilNotB}<br>";
 
+echo "<br>";
 $a += $b;
+echo "{$a}<br>";
 $a -= $b;
+echo "{$a}<br>";
 $a *= $b;
+echo "{$a}<br>";
 $a /= $b;
+echo "{$a}<br>";
 $a %= $b;
+echo "{$a}<br>";
 ?>
