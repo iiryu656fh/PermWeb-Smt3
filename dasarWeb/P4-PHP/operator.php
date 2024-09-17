@@ -30,4 +30,9 @@ echo "a < b     : {$hasilLebihKecil}<br>";
 echo "a > b     : {$hasilLebihBesar}<br>";
 echo "a <= b    : {$hasilLebihKecilSama}<br>";
 echo "a >= b    : {$hasilLebihBesarSama}<br>";
+
+$hasilAnd = $a && $b;
+$hasilOr = $a || $b;
+$hasilNotA = !$a;
+$hasilNotB = !$b;
 ?>
