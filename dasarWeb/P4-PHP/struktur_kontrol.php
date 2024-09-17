@@ -53,6 +53,7 @@ echo "<br>";
 echo "Jumlah buah yang akan dipanen adalah: $jumlahBuah";
 
 echo "<br><br><br>";
+echo "Nilai ujian: 85, 92, 78, 96, 88<br>";
 $skorUjian = [85, 92, 78, 96, 88];
 $totalSkor = 0;
 
