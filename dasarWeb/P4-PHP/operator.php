@@ -58,4 +58,8 @@ echo "{$a}<br>";
 
 $hasilIdentik = $a === $b;
 $hasilTidakIdentik = $a !== $b;
+
+echo "<br>";
+echo "a identik b: {$hasilIdentik}<br>";
+echo "a tidak identik b: {$hasilTidakIdentik}<br>";
 ?>
