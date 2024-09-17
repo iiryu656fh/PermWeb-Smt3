@@ -17,11 +17,19 @@ $jarakTarget = 500;
 $peningkatanHarian = 30;
 $hari = 0;
 
+echo "Diketahui seorang atlet berlari; <br>";
+echo "Jarak saat ini : {$jarakSaatIni}<br>";
+echo "Jarak target   : {$jarakTarget}<br>";
+echo "Peningkatan harian : {$peningkatanHarian}<br>";
+echo "hari           : {$hari}<br>";
+
 while ($jarakSaatIni < $jarakTarget){
     $jarakSaatIni += $peningkatanHarian;
     $hari++;
+    echo "Iterasi ke-$hari: $jarakSaatIni <br>";
 }
 
+echo "<br>";
 echo "Atlet tersebut memerlukan $hari hari untuk mencapai jarak 500 kilometer.";
 
 ?>
