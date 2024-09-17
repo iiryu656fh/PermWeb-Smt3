@@ -17,4 +17,11 @@ echo "a / b     : {$hasilBagi}<br>";
 echo "a % b     : {$sisaBagi}<br>";
 echo "a ^ b     : {$pangkat}<br>";
 
+
+$hasilSama = $a == $b;
+$hasilTidakSama = $a != $b;
+$hasilLebihKecil = $a < $b;
+$hasilLebihBesar = $a > $b;
+$hasilLebihKecilSama = $a <= $b;
+$hasilLebihBesarSama = $a >= $b;
 ?>
