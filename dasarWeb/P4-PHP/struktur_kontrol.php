@@ -38,10 +38,18 @@ $tanamanPerLahan = 5;
 $buahPerTanaman = 10;
 $jumlahBuah = 0;
 
+echo "Diketahui seorang petani kebun akan memanen buah di lahannya; <br>";
+echo "Jummlah Lahan       : {$jumlahLahan}<br>";
+echo "Tanaman per Lahan   : {$tanamanPerLahan}<br>";
+echo "Buah per Tanaman    : {$buahPerTanaman}<br>";
+echo "Jumlah Buah         : {$jumlahBuah}<br>";
+
 for ($i = 1; $i <= $jumlahLahan; $i++){
     $jumlahBuah += ($tanamanPerLahan * $buahPerTanaman);
+    echo "Iterasi ke-$i, jumlah buah = $jumlahBuah <br>";
 }
 
+echo "<br>";
 echo "Jumlah buah yang akan dipanen adalah: $jumlahBuah";
 
 ?>
