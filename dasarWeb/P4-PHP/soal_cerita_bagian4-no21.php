@@ -11,6 +11,11 @@ $nilaiSiswa = [85, 92, 78, 64, 90, 75, 88, 79, 70, 96];
 
 $nilaiMax = 0;
 $nilaiMin = $nilaiSiswa[0];
+$sum = 0;
+
+foreach ($nilaiSiswa as $nilai){
+    $sum += $nilai;
+}
 
 for ($j = 0; $j < 10; $j++) {
     if ($nilaiMax < $nilaiSiswa[$j]){
@@ -19,16 +24,9 @@ for ($j = 0; $j < 10; $j++) {
     if ($nilaiMin > $nilaiSiswa[$j]){
         $nilaiMin = $nilaiSiswa[$j];
     }
-        
 }
-$sum = 0;
-for ($i = 0; $i < 10; $i++) {
-    
-    if ($nilaiSiswa[$i] == $nilaiMin || $nilaiSiswa[[$i] == $nilaiMax]) {
-        continue;
-    }
-    $sum += $nilaiSiswa[$i];
-}
+
+$sum -= ($nilaiMax + $nilaiMin);
 $rataRata = $sum / 8;
     
 echo "-- Nilai Siswa --<br>";
