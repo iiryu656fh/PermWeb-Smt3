@@ -22,7 +22,7 @@ $daftarKaryawan = [
 
 $karyawanPengalamanLimaTahun =[];
 
-foreach ($daftarKaryawan as $Karyawan) {
+foreach ($daftarKaryawan as $karyawan) {
     if ($karyawan[1] > 5) {
         $karyawanPengalamanLimaTahun[] = $karyawan[0];
     }
