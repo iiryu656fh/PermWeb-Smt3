@@ -30,23 +30,28 @@
 
 
 // Tabel 3 - Parameter dengan Nilai Default
-function perkenalan ($nama, $salam="Assalamualaikum"){
-    echo $salam.", ";
-    echo "Perkenalkan, nama saya ".$nama."<br/>";
+// function perkenalan ($nama, $salam="Assalamualaikum"){
+//     echo $salam.", ";
+//     echo "Perkenalkan, nama saya ".$nama."<br/>";
+// }
+
+// //memanggil fungsi yang sudah dibuat
+// perkenalan("Nisa","Halo");
+
+// echo "<hr>";
+
+// $saya = "Iir";
+// $ucapanSalam = "Selamat pagi";
+
+// //Memanggil lagi tanpa mengisi parameter salam
+// perkenalan($saya);
+
+
+// Tabel 4 - Fungsi yang Mengembalikan Nilai
+function hitungUmur($thn_lahir, $thn_sekarang){
+    $umur = $thn_sekarang - $thn_lahir;
+    return $umur;
 }
-
-//memanggil fungsi yang sudah dibuat
-perkenalan("Nisa","Halo");
-
-echo "<hr>";
-
-$saya = "Iir";
-$ucapanSalam = "Selamat pagi";
-
-//Memanggil lagi tanpa mengisi parameter salam
-perkenalan($saya);
-
-
-
+echo "Umur saya adalah ". hitungUmur(2004, 2024) ." tahun" 
 
 ?>
