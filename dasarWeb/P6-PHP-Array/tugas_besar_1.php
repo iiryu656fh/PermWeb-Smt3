@@ -17,10 +17,12 @@
                     array("Dino", "9123124", "Teknik Listrik", "dino@gmail.com"),
                 );
                 for ($i=0; $i < count($mhs); $i++) {
-                    for ($j=0; $j < count($mhs[0]); $j++) { 
-                        echo "<li> Nama: ". $mhs[$i][$j] . "<br>";
-                    } 
-                    echo "<br>";
+                    echo "<ul>";
+                    echo "<li> Nama: ". $mhs[$i][0] . "<br>";
+                    echo "<li> NIM: ". $mhs[$i][1] . "<br>";
+                    echo "<li> Jurusan: ". $mhs[$i][2] . "<br>";
+                    echo "<li> Email: ". $mhs[$i][3] . "<br>";
+                    echo "</ul>";
                 }
             
         ?>
