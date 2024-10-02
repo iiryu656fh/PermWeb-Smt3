@@ -29,11 +29,12 @@
             ?>
         </table>
         <?php 
+            $sum = 0;
             for ($i=0; $i < count($siswa); $i++) { 
                 $sum += $siswa[$i][1];
             }
             $rata2umur = $sum / count($siswa);
-            echo "Rata-rata Umur Siswa = {$rata2umur}";
+            echo "<h2>Rata-rata Umur Siswa = {$rata2umur}</h2>";
         ?>
         <!-- <h2>Rata-rata Umur Siswa = {$rata2umur}</h2>        -->
     </body>
