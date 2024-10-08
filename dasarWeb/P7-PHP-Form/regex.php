@@ -26,7 +26,8 @@
     echo "<hr>";
     //$pattern = '/go*d/'; // cocokkan "god", "good", "gooood", dll
     //$pattern = '/go?d/'; //no 5.4
-    $pattern = '/go??d/'; //no 5.4
+    //$pattern = '/go??d/'; //no 5.4
+    $pattern = '{n,m}'; //no 5.6
     $text = 'god is good.';
     if (preg_match($pattern, $text, $matches)){
         echo "Cocokkan: " . $matches[0];
