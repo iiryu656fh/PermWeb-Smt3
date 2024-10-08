@@ -17,6 +17,14 @@
                     echo "Data berhasil disimpan!";
                 }
             } 
+
+            // Memeriksa apakah input adalah email yang valid
+            $email = $_POST['email'];
+            if (filter_var($email, FILTER_VALIDATE_EMAIL)){
+                // lenjutkan dengan pengolahan email yang aman
+            } else {
+                // Tangani input yang tidak valid
+            }
         ?>
         <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
             <label for="input">Input:</label>
