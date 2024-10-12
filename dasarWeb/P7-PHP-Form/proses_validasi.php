@@ -16,6 +16,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
         $errors[] = "Format email tidak valid";
     }
 
+    //validasi password
+    if(empty($password)){
+        $error[] = "Password harus diisi";
+    } elseif (strlen($password) < 8){
+        $errors[] = "Password minimal 8 karakter";
+    }
+
     //Jika ada kesalahan validasi
     if(!empty($errors)){
         foreach ($errors as $error ) {

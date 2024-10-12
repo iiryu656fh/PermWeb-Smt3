@@ -19,6 +19,11 @@
             <span id="email-error" style="color:red;"></span>
             <br>
 
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password">
+            <span id="password-error" style="color:red;"></span>
+            <br>
+
             <input type="submit" value="Submit">
         </form>
 
@@ -30,6 +35,7 @@
                     event.preventDefault(); // menghentikan pengiriman form default
                     var nama = $("#nama").val();
                     var email = $("#email").val();
+                    var password = $("#password").val();
                     var valid = true;
 
                     //validasi form
@@ -45,6 +51,13 @@
                         valid = false;
                     } else {
                         $("#email-error").text("");
+                    }
+
+                    if (password.length < 8) {
+                        $("#password-error").text("Password minimal 8 karakter!");
+                        valid = false;
+                    } else{
+                        $("#password-error").text("");
                     }
 
                     if (valid) {
