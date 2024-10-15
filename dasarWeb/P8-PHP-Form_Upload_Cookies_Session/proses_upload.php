@@ -1,6 +1,6 @@
 <?php 
 // Lokasi penyimpanan file yang diunggah
-$targetDirectory = "documents/";
+$targetDirectory = "pictures/";
 
 //Periksa apakah direktori penyimpanan ada, jika tidak maka buat
 if (!file_exists($targetDirectory)){
