@@ -1,0 +1,29 @@
+body {
+    background-image: url('images/latarGambar.jpg'); 
+    background-size: 200px 200px;
+}
+main {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: rgb(17, 11, 11); 
+    flex: 1;
+    padding-bottom: 20px;
+}
+
+.card {
+    transition: transform 0.2s;
+    margin: 20px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.bg-orange {
+    background-color: #FAD898;
+}
+
+section {
+    padding: 40px 0;
+}
+
+
