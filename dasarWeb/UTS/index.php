@@ -192,26 +192,77 @@
     <br><br>
 
     <section id="contact" class="mt-5">
-      <h3 class="text-center mb-4">Kontak Kami</h3>
-      <div class="row justify-content-center">
-          <form id="contactForm" onsubmit="kirimPesan(event)">
-            <div class="mb-3">
-              <label for="name" class="form-label">Nama</label>
-              <input type="text" class="form-control" id="name" name="name" required />
-            </div>
-            <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required />
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Pesan</label>
-              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
-          </form>
-          <div id="hasilPesan"></div>
+  <!-- Pengambilan data dari form -->
+  <?php 
+    $pesan = [];
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      if (isset($_POST["name"])){
+        $name = htmlspecialchars($_POST["name"]);
+      } else {
+        $name = '';
+      }
+
+      if (isset($_POST["email"])){
+        $email = htmlspecialchars($_POST["email"]);
+      } else {
+        $email = '';
+      }
+
+      if (isset($_POST["message"])){
+        $message = htmlspecialchars($_POST["message"]);
+      } else {
+        $message = '';
+      }
+      $pesan[] = [
+        "name" => $name,
+        "email" => $email,
+        "message" => $message
+      ];
+      
+    }
+  ?>
+  
+  <h3 class="text-center mb-4">Kontak Kami</h3>
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <form id="contactForm" method="POST" action="">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nama</label>
+          <input type="text" class="form-control" id="name" name="name" required />
         </div>
-    </section>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Pesan</label>
+          <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Kirim Pesan</button>
+      </form>
+      <div id="hasilPesan"></div>
+    </div>
+  </div>
+
+  <div class="container mt-4">
+    <div class="row border border-grey shadow-sm rounded p-3 justify-content-center" style="background-color:#f8f7f3;">
+      <?php
+      if (!empty($pesan)) {
+        foreach ($pesan as $msg) {
+          echo '<div class="col-md-4">';
+          echo '<h5>' . htmlspecialchars($msg["name"]) . '</h5>';
+          echo '<p>"' . htmlspecialchars($msg["message"]) . '"</p>';
+          echo '</div>';
+        }
+      } else {
+        echo '<p class="text-center">Belum ada pesan yang terkirim.</p>';
+      }
+      ?>
+    </div>
+  </div>
+</section>
+</main>
+
   </main>
 
   <!-- Footer -->
