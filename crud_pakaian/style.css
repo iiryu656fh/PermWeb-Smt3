@@ -1,0 +1,13 @@
+body {
+    background-image: url("img/bg.png");
+    height: 500px;
+    background-color: #F6D2D2;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.table-hover thead {
+    background-color: #d9534f; 
+    color: #ffffff; 
+}
