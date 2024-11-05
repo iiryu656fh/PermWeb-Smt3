@@ -71,7 +71,7 @@ if (isset($_POST['submit'])) {
             </div>
             <div class="mb-3">
                 <label for="harga_pakaian" class="form-label">Harga Pakaian</label>
-                <input type="number" class="form-control" id="harga_pakaian" name="harga_pakaian" value="<?= $pakaian['harga_pakaian'] ?>" required>
+                <input type="number" class="form-control" id="harga_pakaian" name="harga_pakaian" value="<?= $pakaian['harga_pakaian'] ?>" min="0" required>
             </div>
             <div class="mb-3">
                 <label for="stok_pakaian" class="form-label">Stok Pakaian</label>
